@@ -14,6 +14,7 @@ class CubeSolverViewController: UIViewController {
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var previousButton: UIButton!
     
+    @IBOutlet weak var solutionLabel: UILabel!
     var rotationSequence = [String]()
     var rotationIndex: Int = 0
     var scene3D: SCNScene = SCNScene()
@@ -384,7 +385,7 @@ class CubeSolverViewController: UIViewController {
             animateEnding()
             return
         }
-        //                    self.solutionLabel.text = self.rotationSequence[self.rotationIndex];
+        self.solutionLabel.text = self.rotationSequence[self.rotationIndex];
         
         let rotationNode = getRotationNode(fromMove: rotationSequence[rotationIndex])
         guard let rotationSCNAction = getAnimation(fromMove: rotationSequence[rotationIndex]) else {
@@ -422,7 +423,7 @@ class CubeSolverViewController: UIViewController {
             return;
         }
         
-        //        self.solutionLabel.text = self.rotationSequence[self.rotationIndex];
+        self.solutionLabel.text = self.rotationSequence[self.rotationIndex];
         
         let rotationNode = getRotationNode(fromMove: rotationSequence[rotationIndex])
         guard let rotationSCNAction = getAnimation(fromMove: rotationSequence[rotationIndex]) else {
