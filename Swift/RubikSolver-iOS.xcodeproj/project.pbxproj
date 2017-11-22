@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4FDC603D1EDCB0E95329C9E2 /* libPods-RubikSolver-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 876A2818C43A6CEA2E9D1BF6 /* libPods-RubikSolver-iOS.a */; };
+		9464AD161E2BB48A003BE0C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9464AD151E2BB48A003BE0C1 /* main.m */; };
+		9464AD191E2BB48A003BE0C1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9464AD181E2BB48A003BE0C1 /* AppDelegate.m */; };
+		9464AD1F1E2BB48A003BE0C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9464AD1D1E2BB48A003BE0C1 /* Main.storyboard */; };
+		9464AD211E2BB48A003BE0C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9464AD201E2BB48A003BE0C1 /* Assets.xcassets */; };
+		9464AD241E2BB48A003BE0C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9464AD221E2BB48A003BE0C1 /* LaunchScreen.storyboard */; };
+		9464AD311E2BBD59003BE0C1 /* CubeCaptureViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9464AD301E2BBD59003BE0C1 /* CubeCaptureViewController.mm */; };
+		9464AD411E2BC1E1003BE0C1 /* color-classification-svm.yml in Resources */ = {isa = PBXBuildFile; fileRef = 9464AD3F1E2BC1E1003BE0C1 /* color-classification-svm.yml */; };
+		9464AD421E2BC1E1003BE0C1 /* color-classification-svm-2.yml in Resources */ = {isa = PBXBuildFile; fileRef = 9464AD401E2BC1E1003BE0C1 /* color-classification-svm-2.yml */; };
+		9464AD491E2BC266003BE0C1 /* ColorDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9464AD451E2BC266003BE0C1 /* ColorDetector.cpp */; };
+		9464AD4A1E2BC266003BE0C1 /* EdgeBasedCubeDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9464AD471E2BC266003BE0C1 /* EdgeBasedCubeDetector.cpp */; };
+		9464AD661E2BC73F003BE0C1 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9464AD5D1E2BC73F003BE0C1 /* Accelerate.framework */; };
+		9464AD671E2BC73F003BE0C1 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9464AD5E1E2BC73F003BE0C1 /* AssetsLibrary.framework */; };
+		9464AD681E2BC73F003BE0C1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9464AD5F1E2BC73F003BE0C1 /* AVFoundation.framework */; };
+		9464AD691E2BC73F003BE0C1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9464AD601E2BC73F003BE0C1 /* CoreGraphics.framework */; };
+		9464AD6A1E2BC73F003BE0C1 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9464AD611E2BC73F003BE0C1 /* CoreImage.framework */; };
+		9464AD6B1E2BC73F003BE0C1 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9464AD621E2BC73F003BE0C1 /* CoreMedia.framework */; };
+		9464AD6C1E2BC73F003BE0C1 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9464AD631E2BC73F003BE0C1 /* CoreVideo.framework */; };
+		9464AD6D1E2BC73F003BE0C1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9464AD641E2BC73F003BE0C1 /* QuartzCore.framework */; };
+		9464AD6E1E2BC73F003BE0C1 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9464AD651E2BC73F003BE0C1 /* SceneKit.framework */; };
+		948EE13D1E2EE358002C4F78 /* coordcube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 948EE1391E2EE358002C4F78 /* coordcube.cpp */; };
+		948EE13E1E2EE358002C4F78 /* cubiecube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 948EE13A1E2EE358002C4F78 /* cubiecube.cpp */; };
+		948EE13F1E2EE358002C4F78 /* facecube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 948EE13B1E2EE358002C4F78 /* facecube.cpp */; };
+		948EE1401E2EE358002C4F78 /* search.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 948EE13C1E2EE358002C4F78 /* search.cpp */; };
+		E037C27C1FC513FC00500BE9 /* KociembaWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = E037C27B1FC513FC00500BE9 /* KociembaWrapper.mm */; };
+		E037C27F1FC5141700500BE9 /* OpenCVWrapperViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E037C27E1FC5141700500BE9 /* OpenCVWrapperViewController.mm */; };
+		E037C2851FC5142800500BE9 /* ColorCorrectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E037C2811FC5142800500BE9 /* ColorCorrectionViewController.swift */; };
+		E037C2861FC5142800500BE9 /* CubeCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E037C2821FC5142800500BE9 /* CubeCaptureViewController.swift */; };
+		E037C2871FC5142800500BE9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E037C2831FC5142800500BE9 /* MainViewController.swift */; };
+		E037C2881FC5142800500BE9 /* CubeSolverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E037C2841FC5142800500BE9 /* CubeSolverViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		46351FAA7A8792AEBEEED39D /* Pods-RubikSolver-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RubikSolver-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RubikSolver-iOS/Pods-RubikSolver-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		4EF780DC172C0E21397363F3 /* Pods-RubikSolver-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RubikSolver-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-RubikSolver-iOS/Pods-RubikSolver-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		876A2818C43A6CEA2E9D1BF6 /* libPods-RubikSolver-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RubikSolver-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9464AD111E2BB48A003BE0C1 /* RubikSolver-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RubikSolver-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9464AD151E2BB48A003BE0C1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9464AD171E2BB48A003BE0C1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9464AD181E2BB48A003BE0C1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9464AD1E1E2BB48A003BE0C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9464AD201E2BB48A003BE0C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9464AD231E2BB48A003BE0C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9464AD251E2BB48A003BE0C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9464AD2F1E2BBD59003BE0C1 /* CubeCaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CubeCaptureViewController.h; sourceTree = "<group>"; };
+		9464AD301E2BBD59003BE0C1 /* CubeCaptureViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CubeCaptureViewController.mm; sourceTree = "<group>"; };
+		9464AD3F1E2BC1E1003BE0C1 /* color-classification-svm.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "color-classification-svm.yml"; sourceTree = "<group>"; };
+		9464AD401E2BC1E1003BE0C1 /* color-classification-svm-2.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "color-classification-svm-2.yml"; sourceTree = "<group>"; };
+		9464AD451E2BC266003BE0C1 /* ColorDetector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColorDetector.cpp; sourceTree = "<group>"; };
+		9464AD461E2BC266003BE0C1 /* ColorDetector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ColorDetector.hpp; sourceTree = "<group>"; };
+		9464AD471E2BC266003BE0C1 /* EdgeBasedCubeDetector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EdgeBasedCubeDetector.cpp; sourceTree = "<group>"; };
+		9464AD481E2BC266003BE0C1 /* EdgeBasedCubeDetector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EdgeBasedCubeDetector.hpp; sourceTree = "<group>"; };
+		9464AD5D1E2BC73F003BE0C1 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		9464AD5E1E2BC73F003BE0C1 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		9464AD5F1E2BC73F003BE0C1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9464AD601E2BC73F003BE0C1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9464AD611E2BC73F003BE0C1 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		9464AD621E2BC73F003BE0C1 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		9464AD631E2BC73F003BE0C1 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		9464AD641E2BC73F003BE0C1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9464AD651E2BC73F003BE0C1 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		948EE1181E2E6381002C4F78 /* stdafx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stdafx.h; sourceTree = "<group>"; };
+		948EE1301E2EE358002C4F78 /* color.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = color.hpp; sourceTree = "<group>"; };
+		948EE1311E2EE358002C4F78 /* coordcube.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = coordcube.hpp; sourceTree = "<group>"; };
+		948EE1321E2EE358002C4F78 /* corner.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = corner.hpp; sourceTree = "<group>"; };
+		948EE1331E2EE358002C4F78 /* cubiecube.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = cubiecube.hpp; sourceTree = "<group>"; };
+		948EE1341E2EE358002C4F78 /* edge.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = edge.hpp; sourceTree = "<group>"; };
+		948EE1351E2EE358002C4F78 /* facecube.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = facecube.hpp; sourceTree = "<group>"; };
+		948EE1361E2EE358002C4F78 /* facelet.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = facelet.hpp; sourceTree = "<group>"; };
+		948EE1371E2EE358002C4F78 /* search.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = search.hpp; sourceTree = "<group>"; };
+		948EE1391E2EE358002C4F78 /* coordcube.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = coordcube.cpp; sourceTree = "<group>"; };
+		948EE13A1E2EE358002C4F78 /* cubiecube.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cubiecube.cpp; sourceTree = "<group>"; };
+		948EE13B1E2EE358002C4F78 /* facecube.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = facecube.cpp; sourceTree = "<group>"; };
+		948EE13C1E2EE358002C4F78 /* search.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = search.cpp; sourceTree = "<group>"; };
+		E037C27A1FC513FB00500BE9 /* KociembaWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KociembaWrapper.h; sourceTree = "<group>"; };
+		E037C27B1FC513FC00500BE9 /* KociembaWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = KociembaWrapper.mm; sourceTree = "<group>"; };
+		E037C27D1FC5141700500BE9 /* OpenCVWrapperViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapperViewController.h; sourceTree = "<group>"; };
+		E037C27E1FC5141700500BE9 /* OpenCVWrapperViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapperViewController.mm; sourceTree = "<group>"; };
+		E037C2801FC5142700500BE9 /* RubikSolver-iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RubikSolver-iOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		E037C2811FC5142800500BE9 /* ColorCorrectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCorrectionViewController.swift; sourceTree = "<group>"; };
+		E037C2821FC5142800500BE9 /* CubeCaptureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeCaptureViewController.swift; sourceTree = "<group>"; };
+		E037C2831FC5142800500BE9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E037C2841FC5142800500BE9 /* CubeSolverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeSolverViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9464AD0E1E2BB48A003BE0C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9464AD661E2BC73F003BE0C1 /* Accelerate.framework in Frameworks */,
+				9464AD671E2BC73F003BE0C1 /* AssetsLibrary.framework in Frameworks */,
+				9464AD681E2BC73F003BE0C1 /* AVFoundation.framework in Frameworks */,
+				9464AD691E2BC73F003BE0C1 /* CoreGraphics.framework in Frameworks */,
+				9464AD6A1E2BC73F003BE0C1 /* CoreImage.framework in Frameworks */,
+				9464AD6B1E2BC73F003BE0C1 /* CoreMedia.framework in Frameworks */,
+				9464AD6C1E2BC73F003BE0C1 /* CoreVideo.framework in Frameworks */,
+				9464AD6D1E2BC73F003BE0C1 /* QuartzCore.framework in Frameworks */,
+				9464AD6E1E2BC73F003BE0C1 /* SceneKit.framework in Frameworks */,
+				4FDC603D1EDCB0E95329C9E2 /* libPods-RubikSolver-iOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F36BE6BAE9C900E67B8EBC3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9464AD5D1E2BC73F003BE0C1 /* Accelerate.framework */,
+				9464AD5E1E2BC73F003BE0C1 /* AssetsLibrary.framework */,
+				9464AD5F1E2BC73F003BE0C1 /* AVFoundation.framework */,
+				9464AD601E2BC73F003BE0C1 /* CoreGraphics.framework */,
+				9464AD611E2BC73F003BE0C1 /* CoreImage.framework */,
+				9464AD621E2BC73F003BE0C1 /* CoreMedia.framework */,
+				9464AD631E2BC73F003BE0C1 /* CoreVideo.framework */,
+				9464AD641E2BC73F003BE0C1 /* QuartzCore.framework */,
+				9464AD651E2BC73F003BE0C1 /* SceneKit.framework */,
+				876A2818C43A6CEA2E9D1BF6 /* libPods-RubikSolver-iOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9464AD081E2BB48A003BE0C1 = {
+			isa = PBXGroup;
+			children = (
+				9464AD131E2BB48A003BE0C1 /* RubikSolver-iOS */,
+				9464AD381E2BBF57003BE0C1 /* RubikSolver-ImageProcessingEngine */,
+				948EE12D1E2EE358002C4F78 /* dependencies */,
+				9464AD121E2BB48A003BE0C1 /* Products */,
+				ADA59EC0CABC19AF1E2EE4EC /* Pods */,
+				2F36BE6BAE9C900E67B8EBC3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9464AD121E2BB48A003BE0C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9464AD111E2BB48A003BE0C1 /* RubikSolver-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9464AD131E2BB48A003BE0C1 /* RubikSolver-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				9464AD2B1E2BB6FF003BE0C1 /* ViewControllers */,
+				9464AD171E2BB48A003BE0C1 /* AppDelegate.h */,
+				9464AD181E2BB48A003BE0C1 /* AppDelegate.m */,
+				9464AD1D1E2BB48A003BE0C1 /* Main.storyboard */,
+				9464AD201E2BB48A003BE0C1 /* Assets.xcassets */,
+				9464AD221E2BB48A003BE0C1 /* LaunchScreen.storyboard */,
+				9464AD251E2BB48A003BE0C1 /* Info.plist */,
+				9464AD141E2BB48A003BE0C1 /* Supporting Files */,
+			);
+			path = "RubikSolver-iOS";
+			sourceTree = "<group>";
+		};
+		9464AD141E2BB48A003BE0C1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E037C27D1FC5141700500BE9 /* OpenCVWrapperViewController.h */,
+				E037C27E1FC5141700500BE9 /* OpenCVWrapperViewController.mm */,
+				E037C27A1FC513FB00500BE9 /* KociembaWrapper.h */,
+				E037C27B1FC513FC00500BE9 /* KociembaWrapper.mm */,
+				9464AD151E2BB48A003BE0C1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9464AD2B1E2BB6FF003BE0C1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E037C2811FC5142800500BE9 /* ColorCorrectionViewController.swift */,
+				E037C2821FC5142800500BE9 /* CubeCaptureViewController.swift */,
+				E037C2841FC5142800500BE9 /* CubeSolverViewController.swift */,
+				E037C2831FC5142800500BE9 /* MainViewController.swift */,
+				9464AD2F1E2BBD59003BE0C1 /* CubeCaptureViewController.h */,
+				9464AD301E2BBD59003BE0C1 /* CubeCaptureViewController.mm */,
+				E037C2801FC5142700500BE9 /* RubikSolver-iOS-Bridging-Header.h */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9464AD381E2BBF57003BE0C1 /* RubikSolver-ImageProcessingEngine */ = {
+			isa = PBXGroup;
+			children = (
+				9464AD3A1E2BBFB5003BE0C1 /* Classifiers */,
+				9464AD3C1E2BBFB5003BE0C1 /* Source */,
+			);
+			path = "RubikSolver-ImageProcessingEngine";
+			sourceTree = "<group>";
+		};
+		9464AD3A1E2BBFB5003BE0C1 /* Classifiers */ = {
+			isa = PBXGroup;
+			children = (
+				9464AD3F1E2BC1E1003BE0C1 /* color-classification-svm.yml */,
+				9464AD401E2BC1E1003BE0C1 /* color-classification-svm-2.yml */,
+			);
+			path = Classifiers;
+			sourceTree = "<group>";
+		};
+		9464AD3C1E2BBFB5003BE0C1 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				9464AD451E2BC266003BE0C1 /* ColorDetector.cpp */,
+				9464AD461E2BC266003BE0C1 /* ColorDetector.hpp */,
+				9464AD471E2BC266003BE0C1 /* EdgeBasedCubeDetector.cpp */,
+				9464AD481E2BC266003BE0C1 /* EdgeBasedCubeDetector.hpp */,
+				948EE1181E2E6381002C4F78 /* stdafx.h */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		948EE12D1E2EE358002C4F78 /* dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				948EE12E1E2EE358002C4F78 /* KociembaSolver */,
+			);
+			path = dependencies;
+			sourceTree = "<group>";
+		};
+		948EE12E1E2EE358002C4F78 /* KociembaSolver */ = {
+			isa = PBXGroup;
+			children = (
+				948EE12F1E2EE358002C4F78 /* include */,
+				948EE1381E2EE358002C4F78 /* src */,
+			);
+			path = KociembaSolver;
+			sourceTree = "<group>";
+		};
+		948EE12F1E2EE358002C4F78 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				948EE1301E2EE358002C4F78 /* color.hpp */,
+				948EE1311E2EE358002C4F78 /* coordcube.hpp */,
+				948EE1321E2EE358002C4F78 /* corner.hpp */,
+				948EE1331E2EE358002C4F78 /* cubiecube.hpp */,
+				948EE1341E2EE358002C4F78 /* edge.hpp */,
+				948EE1351E2EE358002C4F78 /* facecube.hpp */,
+				948EE1361E2EE358002C4F78 /* facelet.hpp */,
+				948EE1371E2EE358002C4F78 /* search.hpp */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		948EE1381E2EE358002C4F78 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				948EE1391E2EE358002C4F78 /* coordcube.cpp */,
+				948EE13A1E2EE358002C4F78 /* cubiecube.cpp */,
+				948EE13B1E2EE358002C4F78 /* facecube.cpp */,
+				948EE13C1E2EE358002C4F78 /* search.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		ADA59EC0CABC19AF1E2EE4EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				46351FAA7A8792AEBEEED39D /* Pods-RubikSolver-iOS.debug.xcconfig */,
+				4EF780DC172C0E21397363F3 /* Pods-RubikSolver-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9464AD101E2BB48A003BE0C1 /* RubikSolver-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9464AD281E2BB48A003BE0C1 /* Build configuration list for PBXNativeTarget "RubikSolver-iOS" */;
+			buildPhases = (
+				F6E2458BBBEF096A60EBBC03 /* [CP] Check Pods Manifest.lock */,
+				9464AD0D1E2BB48A003BE0C1 /* Sources */,
+				9464AD0E1E2BB48A003BE0C1 /* Frameworks */,
+				9464AD0F1E2BB48A003BE0C1 /* Resources */,
+				E4F12D01FB67686C5384314B /* [CP] Embed Pods Frameworks */,
+				F84179103AEEB44B69120E19 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RubikSolver-iOS";
+			productName = "RubikSolver-iOS";
+			productReference = 9464AD111E2BB48A003BE0C1 /* RubikSolver-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9464AD091E2BB48A003BE0C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = HomeApps;
+				TargetAttributes = {
+					9464AD101E2BB48A003BE0C1 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 5A8VCRJ637;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9464AD0C1E2BB48A003BE0C1 /* Build configuration list for PBXProject "RubikSolver-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9464AD081E2BB48A003BE0C1;
+			productRefGroup = 9464AD121E2BB48A003BE0C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9464AD101E2BB48A003BE0C1 /* RubikSolver-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9464AD0F1E2BB48A003BE0C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9464AD241E2BB48A003BE0C1 /* LaunchScreen.storyboard in Resources */,
+				9464AD211E2BB48A003BE0C1 /* Assets.xcassets in Resources */,
+				9464AD1F1E2BB48A003BE0C1 /* Main.storyboard in Resources */,
+				9464AD411E2BC1E1003BE0C1 /* color-classification-svm.yml in Resources */,
+				9464AD421E2BC1E1003BE0C1 /* color-classification-svm-2.yml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E4F12D01FB67686C5384314B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RubikSolver-iOS/Pods-RubikSolver-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6E2458BBBEF096A60EBBC03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F84179103AEEB44B69120E19 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RubikSolver-iOS/Pods-RubikSolver-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9464AD0D1E2BB48A003BE0C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				948EE1401E2EE358002C4F78 /* search.cpp in Sources */,
+				E037C2871FC5142800500BE9 /* MainViewController.swift in Sources */,
+				E037C27F1FC5141700500BE9 /* OpenCVWrapperViewController.mm in Sources */,
+				948EE13F1E2EE358002C4F78 /* facecube.cpp in Sources */,
+				948EE13E1E2EE358002C4F78 /* cubiecube.cpp in Sources */,
+				948EE13D1E2EE358002C4F78 /* coordcube.cpp in Sources */,
+				E037C27C1FC513FC00500BE9 /* KociembaWrapper.mm in Sources */,
+				E037C2851FC5142800500BE9 /* ColorCorrectionViewController.swift in Sources */,
+				9464AD311E2BBD59003BE0C1 /* CubeCaptureViewController.mm in Sources */,
+				9464AD191E2BB48A003BE0C1 /* AppDelegate.m in Sources */,
+				E037C2881FC5142800500BE9 /* CubeSolverViewController.swift in Sources */,
+				9464AD491E2BC266003BE0C1 /* ColorDetector.cpp in Sources */,
+				9464AD161E2BB48A003BE0C1 /* main.m in Sources */,
+				E037C2861FC5142800500BE9 /* CubeCaptureViewController.swift in Sources */,
+				9464AD4A1E2BC266003BE0C1 /* EdgeBasedCubeDetector.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9464AD1D1E2BB48A003BE0C1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9464AD1E1E2BB48A003BE0C1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9464AD221E2BB48A003BE0C1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9464AD231E2BB48A003BE0C1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9464AD261E2BB48A003BE0C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9464AD271E2BB48A003BE0C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9464AD291E2BB48A003BE0C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46351FAA7A8792AEBEEED39D /* Pods-RubikSolver-iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 5A8VCRJ637;
+				INFOPLIST_FILE = "RubikSolver-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rhcpfan.RubikSolver-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RubikSolver-iOS/ViewControllers/RubikSolver-iOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9464AD2A1E2BB48A003BE0C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EF780DC172C0E21397363F3 /* Pods-RubikSolver-iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 5A8VCRJ637;
+				INFOPLIST_FILE = "RubikSolver-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rhcpfan.RubikSolver-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RubikSolver-iOS/ViewControllers/RubikSolver-iOS-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9464AD0C1E2BB48A003BE0C1 /* Build configuration list for PBXProject "RubikSolver-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9464AD261E2BB48A003BE0C1 /* Debug */,
+				9464AD271E2BB48A003BE0C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9464AD281E2BB48A003BE0C1 /* Build configuration list for PBXNativeTarget "RubikSolver-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9464AD291E2BB48A003BE0C1 /* Debug */,
+				9464AD2A1E2BB48A003BE0C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9464AD091E2BB48A003BE0C1 /* Project object */;
+}
