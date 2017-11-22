@@ -13,7 +13,6 @@
 		9464AD1F1E2BB48A003BE0C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9464AD1D1E2BB48A003BE0C1 /* Main.storyboard */; };
 		9464AD211E2BB48A003BE0C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9464AD201E2BB48A003BE0C1 /* Assets.xcassets */; };
 		9464AD241E2BB48A003BE0C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9464AD221E2BB48A003BE0C1 /* LaunchScreen.storyboard */; };
-		9464AD311E2BBD59003BE0C1 /* CubeCaptureViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9464AD301E2BBD59003BE0C1 /* CubeCaptureViewController.mm */; };
 		9464AD411E2BC1E1003BE0C1 /* color-classification-svm.yml in Resources */ = {isa = PBXBuildFile; fileRef = 9464AD3F1E2BC1E1003BE0C1 /* color-classification-svm.yml */; };
 		9464AD421E2BC1E1003BE0C1 /* color-classification-svm-2.yml in Resources */ = {isa = PBXBuildFile; fileRef = 9464AD401E2BC1E1003BE0C1 /* color-classification-svm-2.yml */; };
 		9464AD491E2BC266003BE0C1 /* ColorDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9464AD451E2BC266003BE0C1 /* ColorDetector.cpp */; };
@@ -51,8 +50,6 @@
 		9464AD201E2BB48A003BE0C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9464AD231E2BB48A003BE0C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9464AD251E2BB48A003BE0C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9464AD2F1E2BBD59003BE0C1 /* CubeCaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CubeCaptureViewController.h; sourceTree = "<group>"; };
-		9464AD301E2BBD59003BE0C1 /* CubeCaptureViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CubeCaptureViewController.mm; sourceTree = "<group>"; };
 		9464AD3F1E2BC1E1003BE0C1 /* color-classification-svm.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "color-classification-svm.yml"; sourceTree = "<group>"; };
 		9464AD401E2BC1E1003BE0C1 /* color-classification-svm-2.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "color-classification-svm-2.yml"; sourceTree = "<group>"; };
 		9464AD451E2BC266003BE0C1 /* ColorDetector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColorDetector.cpp; sourceTree = "<group>"; };
@@ -184,8 +181,6 @@
 				E037C2821FC5142800500BE9 /* CubeCaptureViewController.swift */,
 				E037C2841FC5142800500BE9 /* CubeSolverViewController.swift */,
 				E037C2831FC5142800500BE9 /* MainViewController.swift */,
-				9464AD2F1E2BBD59003BE0C1 /* CubeCaptureViewController.h */,
-				9464AD301E2BBD59003BE0C1 /* CubeCaptureViewController.mm */,
 				E037C2801FC5142700500BE9 /* RubikSolver-iOS-Bridging-Header.h */,
 			);
 			path = ViewControllers;
@@ -407,7 +402,6 @@
 				948EE13D1E2EE358002C4F78 /* coordcube.cpp in Sources */,
 				E037C27C1FC513FC00500BE9 /* KociembaWrapper.mm in Sources */,
 				E037C2851FC5142800500BE9 /* ColorCorrectionViewController.swift in Sources */,
-				9464AD311E2BBD59003BE0C1 /* CubeCaptureViewController.mm in Sources */,
 				9464AD191E2BB48A003BE0C1 /* AppDelegate.m in Sources */,
 				E037C2881FC5142800500BE9 /* CubeSolverViewController.swift in Sources */,
 				9464AD491E2BC266003BE0C1 /* ColorDetector.cpp in Sources */,
